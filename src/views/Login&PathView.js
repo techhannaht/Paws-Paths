@@ -4,6 +4,7 @@ import { Register } from "../auth/Register";
 import { NavBar } from "../navbar/NavBar";
 import { ApplicationViews } from "./AppView";
 import { Authorized } from "./Authorized";
+import "./Dashboard.css"
 
 function PawsandPaths() {
 	return (

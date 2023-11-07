@@ -16,20 +16,17 @@ fetch(`https://api.open-meteo.com/v1/forecast?latitude=38.3498&longitude=-81.632
 
     return (
 
-        <div class="card">
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="image is-48x48">
-          <img src=""/>
-        </figure>
+        <div className="card has-background-warning">
+  <div className="card-content">
+    <div className="media">
+      <div className="media">
       </div>
-      <div class="media-content">
-        <p class="title is-4">Current Temp: {currentWeather?.current?.temperature_2m}{currentWeather?.current_units?.temperature_2m}</p>
+      <div className="media-content">
+        <p className="title is-4">Current Temp: {currentWeather?.current?.temperature_2m}{currentWeather?.current_units?.temperature_2m}</p>
       </div>
     </div>
 
-    <div class="content">
+    <div className="content">
       <h4>Low Temp: {currentWeather.daily?.temperature_2m_min} {currentWeather.daily_units?.temperature_2m_min}</h4>
       <h4>High Temp: {currentWeather.daily?.temperature_2m_max} {currentWeather.daily_units?.temperature_2m_max}</h4>
       <br/>
