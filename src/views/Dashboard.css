@@ -1,3 +1,17 @@
 body {
     background-color: rgb(249, 214, 233);
 }
+
+html {
+    background-color: rgb(249, 214, 233);
+}
+
+#githubbutton {
+    background-color: rgb(244, 146, 178);
+    border-color: rgb(60, 14, 50);
+    color: rgb(60, 14, 50);
+}
+
+#mainlogin {
+    background-color: rgb(147, 58, 107);
+}

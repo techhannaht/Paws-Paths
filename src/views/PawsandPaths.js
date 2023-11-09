@@ -43,10 +43,10 @@ export const PawsandPathsDash = () => {
     <section className="section">
       <div className="container">
         <h1 className="title">
-          Welcome back!
+          Hi Human!🐾
         </h1>
         <p className="subtitle">
-          How was your dog walk today?
+          How was the walk today with your doggos?
         </p>
         <div className="columns">
           <div className="column is-three-fifths">
@@ -63,6 +63,11 @@ export const PawsandPathsDash = () => {
         <JournalList journalEntries={journalEntries} updateJournalState={updateJournalState} deleteJournalEntry={deleteJournalEntry} />
 
       </div>
+      <button id="githubbutton" className="button" >
+        <span>
+        <a id="githubbutton" href="https://github.com/techhannaht"><strong>GitHub</strong></a>
+      </span>
+      </button>
     </section>
 
 

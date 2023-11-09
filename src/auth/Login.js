@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { getUserEmail } from "./AuthAPIManager";
+import "../views/Dashboard.css"
 
 export const Login = () => {
     const [email, set] = useState();
@@ -28,30 +29,32 @@ export const Login = () => {
     };
 
     return (
-        <main className='container--login'>
-            <section>
-                <form className='form--login' onSubmit={handleLogin}>
-                    <h2>Sign in to view your PathBoard:</h2>
-                    <div class="field">
-                        <label class="label">Email Address</label>
-                        <div class="control">
-                            <input id="inputEmail"
-                                type='email'
-                                onChange={(evt) => set(evt.target.value)}
-                                className='input'
-                                placeholder='Email address'
-                                required
-                                autoFocus />
+        <>
+            <div className="card">
+                <section>
+                    <form className='form--login' onSubmit={handleLogin}>
+                        <h2>Sign in to view your PathBoard:</h2>
+                        <div class="field">
+                            <label class="label">Email Address</label>
+                            <div class="control">
+                                <input id="inputEmail"
+                                    type='email'
+                                    onChange={(evt) => set(evt.target.value)}
+                                    className='input'
+                                    placeholder='Email address'
+                                    required
+                                    autoFocus />
+                            </div>
                         </div>
-                    </div>
-                    <fieldset>
-                        <button class='button is-warning'>Sign in</button>
-                    </fieldset>
-                </form>
-            </section>
-            <section className='link--register'>
-                <Link to='/register'>Not a member yet?</Link>
-            </section>
-        </main>
+                        <fieldset>
+                            <button class='button is-warning'>Sign in</button>
+                        </fieldset>
+                    </form>
+                </section>
+                <section className='link--register'>
+                    <Link to='/register'>Not a member yet?</Link>
+                </section>
+            </div>
+        </>
     );
 };

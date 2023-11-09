@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./JournalCard.css"
+import { DogSelect } from "../dogs/DogSelect"
 // make journal entry component 
 
 //accept journal prop to create single entry
@@ -94,9 +95,7 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
         <div className="message-body">
           <textarea name="entryText" className="textarea" placeholder="tell me about it ..." value={editJournal.entryText} onChange={handleControlledInputChange}></textarea>
         </div>
-
-
-
+        <DogSelect handleControlledInputChange={handleControlledInputChange} journalEntry={editJournal} />
       </article>
     }
   </>

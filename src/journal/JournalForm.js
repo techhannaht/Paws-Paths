@@ -62,7 +62,7 @@ export const JournalForm = ({updateJournalState}) => {
             <div className="field">
                 <label className="label">Give Us the Details!</label>
                 <div className="control">
-                    <textarea name="entryText" className="textarea" placeholder="Feel free to paint vivid descriptions of your chosen paths, whether they wind through scenic parks, urban neighborhoods, or tranquil woodlands. Share the funny antics, unexpected encounters, and heartwarming moments that occur during your walks." value={journalEntry.entryText}  onChange={handleControlledInputChange}></textarea> 
+                    <textarea name="entryText" className="textarea" placeholder="Feel free to paint vivid descriptions of your chosen paths, whether they wind through scenic parks, urban neighborhoods, or tranquil woodlands. Share the funny antics, unexpected encounters, and heartwarming moments that occur during your walks with your doggos." value={journalEntry.entryText}  onChange={handleControlledInputChange}></textarea> 
                 </div>
             </div>
             <div className="control">
