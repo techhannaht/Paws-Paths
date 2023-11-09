@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import "./Weather.css"
 
 
 
@@ -16,19 +17,19 @@ fetch(`https://api.open-meteo.com/v1/forecast?latitude=38.3498&longitude=-81.632
 
     return (
 
-        <div className="card has-background-warning">
+        <div id="weathercard" className="card">
   <div className="card-content">
     <div className="media">
       <div className="media">
       </div>
-      <div className="media-content">
-        <p className="title is-4">Current Temp: {currentWeather?.current?.temperature_2m}{currentWeather?.current_units?.temperature_2m}</p>
+      <div id="weathertext" className="media-content">
+        <p id="weathertext" className="title is-4">Current Temp: {currentWeather?.current?.temperature_2m}{currentWeather?.current_units?.temperature_2m}</p>
       </div>
     </div>
 
-    <div className="content">
-      <h4>Low Temp: {currentWeather.daily?.temperature_2m_min} {currentWeather.daily_units?.temperature_2m_min}</h4>
-      <h4>High Temp: {currentWeather.daily?.temperature_2m_max} {currentWeather.daily_units?.temperature_2m_max}</h4>
+    <div id="weathertext" className="content">
+      <h4 id="weathertext">Low Temp: {currentWeather.daily?.temperature_2m_min} {currentWeather.daily_units?.temperature_2m_min}</h4>
+      <h4 id="weathertext">High Temp: {currentWeather.daily?.temperature_2m_max} {currentWeather.daily_units?.temperature_2m_max}</h4>
       <br/>
       <time datetime={currentWeather?.current?.time}>{Date(currentWeather?.current?.time)}</time>
     </div>

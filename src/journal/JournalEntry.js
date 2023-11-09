@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import "./JournalCard.css"
 // make journal entry component 
 
 //accept journal prop to create single entry
@@ -40,9 +41,9 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
 
   return <>
     {!showForm ?
-      <article className="message is-warning">
+      <article id="journalcard" className="message">
 
-        <div className="message-header">
+        <div id="journalcardheader" className="message-header">
           <p>{singleJournal.title}</p>
           <p></p>
           <p></p>
@@ -63,7 +64,7 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
         <div>
           <div class="tags are-medium has-addons">
             <span class="tag">You walked with:</span>
-            <span class="tag is-warning">{singleJournal.dog.name}</span>
+            <span id="dogtag" class="tag">{singleJournal.dog.name}</span>
           </div>
         </div>
 
@@ -73,9 +74,9 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
       </article>
       :
 
-      <article className="message is-primary">
+      <article id="journalcard" className="message">
 
-        <div className="message-header">
+        <div  id="journalcardheader"  className="message-header">
           <input name="title" type="text" placeholder="" value={editJournal.title} onChange={handleControlledInputChange} />
           <p></p>
           <p></p>
@@ -93,7 +94,6 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
         <div className="message-body">
           <textarea name="entryText" className="textarea" placeholder="tell me about it ..." value={editJournal.entryText} onChange={handleControlledInputChange}></textarea>
         </div>
-        <div>User: {singleJournal.userId}</div>
 
 
 

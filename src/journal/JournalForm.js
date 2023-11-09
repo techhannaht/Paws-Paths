@@ -66,7 +66,7 @@ export const JournalForm = ({updateJournalState}) => {
                 </div>
             </div>
             <div className="control">
-                <button type="submit" className="button is-primary" onClick={refreshPage}>Submit</button>
+                <button id="submitbutton" type="submit" className="button is-primary" onClick={refreshPage}>Submit</button>
             </div>
      
         </form>

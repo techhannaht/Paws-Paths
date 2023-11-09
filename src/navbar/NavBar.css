@@ -1,0 +1,15 @@
+#logoutbutton {
+    background-color: rgb(244, 146, 178);
+    color:rgb(67, 34, 34);
+    border-color: rgb(60, 14, 50);
+}
+
+.navbar__link {
+    background-color: rgb(244, 146, 178);
+    color:rgb(67, 34, 34);
+}
+
+#dashbutton {
+    background-color: rgb(244, 146, 178);
+    border-color: rgb(60, 14, 50);
+}

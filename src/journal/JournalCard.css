@@ -1,0 +1,17 @@
+#journalcard {
+    background-color: rgb(241, 197, 217);
+    color:rgb(67, 34, 34);
+}
+
+#journalcardheader {
+    background-color: rgb(244, 146, 178);
+    color:rgb(67, 34, 34);
+}
+
+#dogtag {
+    background-color: rgb(244, 146, 178);
+}
+
+#submitbutton {
+    background-color: rgb(67, 34, 34);
+}

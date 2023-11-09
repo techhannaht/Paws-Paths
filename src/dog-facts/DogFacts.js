@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import "./DogsFacts.css"
 
 
 
@@ -16,12 +17,12 @@ fetch(`https://dogapi.dog/api/v2/facts?limit=1`)
 
     return (
         <>
-<div class="card has-background-warning">
-<p class="card-header-title">
-      Random Dog Facts
+<div id="dogfactcard" class="card">
+<p id="weathertext"  class="card-header-title">
+     Random Dog Fact:
     </p>
   <div class="card-content">
-    <p class="subtitle">
+    <p id="weathertext" class="subtitle">
     {DogFact?.attributes?.body}
     </p>
   </div>
