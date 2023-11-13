@@ -10,14 +10,14 @@ function StarRating(updateJournalState) {
 
     const handleControlledInputChange = (e) => {
 
-        const newRating = [...rating]
+        const newRating = {...rating}
 
         newRating[`${e.target.name}`] = e.target.value
 
         setRating(newRating)
     }
 
-    const saveEntry = (e, index) => {
+    const saveEntry = (e) => {
         e.preventDefault()
 
         const entryToSend = { ...rating }
@@ -32,6 +32,7 @@ function StarRating(updateJournalState) {
             .then(updateJournalState)
     }
 
+
     return (
         <div className='starRating'>
             {[...Array(5)].map((star, index) => {
@@ -42,7 +43,7 @@ function StarRating(updateJournalState) {
                             type="radio"
                             name="rating"
                             onClick={saveEntry}
-                            value={walkRating.rating}
+                            value={walkRating}
                             onChange={handleControlledInputChange}
                         />
                         <FaStar
