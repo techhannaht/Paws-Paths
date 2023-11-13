@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { PawsandPathsDash } from "./PawsandPaths";
 import { FoundersNotes } from "../founders-notes/FoundersNotes";
+import { MapWidget } from "../map/Map";
 
 export const ApplicationViews = () => {
 	const localPathsUser = localStorage.getItem("activeUser");
@@ -14,6 +15,7 @@ export const ApplicationViews = () => {
 						<Route path="" element={<PawsandPathsDash />} />
 						<Route path="/dashboard" element={<PawsandPathsDash />} />
 						<Route path="/foundersnotes" element={<FoundersNotes />} />
+						<Route path="/morepaths" element={<MapWidget />} />
 					</Routes>
 				</div>
 			</>

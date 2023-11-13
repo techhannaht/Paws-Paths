@@ -5,6 +5,7 @@ import { JournalList } from "../journal/JournalList"
 import { Weather } from "../weather/Weather"
 import { DogFactWidget } from "../dog-facts/DogFacts"
 import logo from "../image/Paws&Paths.png"
+import "./Dashboard.css"
 
 
 export const PawsandPathsDash = () => {
@@ -40,6 +41,7 @@ export const PawsandPathsDash = () => {
 
 
   return (
+    <>
     <section className="section">
       <div className="container">
         <h1 className="title">
@@ -69,7 +71,7 @@ export const PawsandPathsDash = () => {
       </span>
       </button>
     </section>
-
+</>
 
   )
 }
