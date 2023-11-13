@@ -45,7 +45,7 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
       <article id="journalcard" className="message">
 
         <div id="journalcardheader" className="message-header">
-          <p>{singleJournal.title}</p>
+          <p>{singleJournal.route}</p>
           <p></p>
           <p></p>
           <p></p>

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./JournalForm.css"
 import { DogSelect } from "../dogs/DogSelect"
+import StarRating from "./StarRating"
 
 
 export const JournalForm = ({updateJournalState}) => {
@@ -59,6 +60,7 @@ export const JournalForm = ({updateJournalState}) => {
                 </div>
             </div>
             <DogSelect handleControlledInputChange={handleControlledInputChange} journalEntry={journalEntry} />
+            <StarRating handleControlledInputChange={handleControlledInputChange} journalEntry={journalEntry} updateJournalState={updateJournalState}/>
             <div className="field">
                 <label className="label">Give Us the Details!</label>
                 <div className="control">

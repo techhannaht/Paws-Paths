@@ -7,6 +7,7 @@ export const FoundersNotes = () => {
 
     return (
         <>
+        
             <section className="section">
                 <div class="columns">
                     <div class="column">
@@ -34,6 +35,10 @@ export const FoundersNotes = () => {
                     Join us on this journey as we celebrate the bonds between dogs and their owners, promote healthier and happier lifestyles for our furry friends, and make every walk an unforgettable adventure. Whether it's Bean, Froggie, or your own cherished canine companion, Paws&Paths is here to make every walk a moment to remember.
                 </div>
             </article>
+            
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-35e949b4-88c1-4b73-9391-909341a23e1e" data-elfsight-app-lazy></div>
+            <section className="section"> </section>
         </>
     )
 }
