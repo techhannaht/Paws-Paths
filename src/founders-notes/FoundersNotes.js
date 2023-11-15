@@ -8,11 +8,6 @@ import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.mi
 
 export const FoundersNotes = () => {
 
-    const getPics = () => {
-        return fetch(`http://localhost:8088/slides`)
-        .then(response => response.json())
-    }
-
     return (
         <>
           

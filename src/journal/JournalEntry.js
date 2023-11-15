@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "./JournalCard.css"
 import { DogSelect } from "../dogs/DogSelect"
+import StarRating from "./StarRating"
 // make journal entry component 
 
 //accept journal prop to create single entry
@@ -40,6 +41,7 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
   }
 
 
+
   return <>
     {!showForm ?
       <article id="journalcard" className="message">
@@ -66,6 +68,10 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
           <div className="tags are-medium has-addons">
             <span className="tag">You walked with:</span>
             <span id="dogtag" className="tag">{singleJournal.dog.name}</span>
+          </div>
+          <div className="tags are-medium has-addons">
+            <span className="tag">You rated this walk:</span>
+            <span id="dogtag" className="tag">{singleJournal.rating} stars ⭐</span>
           </div>
         </div>
 
@@ -96,6 +102,7 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
           <textarea name="entryText" className="textarea" placeholder="tell me about it ..." value={editJournal.entryText} onChange={handleControlledInputChange}></textarea>
         </div>
         <DogSelect handleControlledInputChange={handleControlledInputChange} journalEntry={editJournal} />
+        <StarRating handleControlledInputChange={handleControlledInputChange} journalEntry={editJournal} />
       </article>
     }
   </>

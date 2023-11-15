@@ -5,3 +5,9 @@ input[type=radio] {
 .star {
     cursor: pointer;
 }
+
+/* .Ratings {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+} */
