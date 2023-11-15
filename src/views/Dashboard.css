@@ -19,3 +19,11 @@ html {
 #footer {
     background-color: rgb(249, 214, 233);
 }
+
+#pawsdash {
+    background-color: rgb(253, 180, 215);
+    border-color: rgb(60, 14, 50);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+}

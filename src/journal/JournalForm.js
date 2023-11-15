@@ -59,8 +59,8 @@ export const JournalForm = ({updateJournalState}) => {
                     <input className="input" type="Date" name="dateTime" value={journalEntry.dateTime}  onChange={handleControlledInputChange}/>
                 </div>
             </div>
-            <DogSelect handleControlledInputChange={handleControlledInputChange} journalEntry={journalEntry} />
-            <StarRating handleControlledInputChange={handleControlledInputChange} journalEntry={journalEntry} updateJournalState={updateJournalState}/>
+            <DogSelect key={journalEntry.id} handleControlledInputChange={handleControlledInputChange} journalEntry={journalEntry} />
+            <StarRating key={journalEntry.id} handleControlledInputChange={handleControlledInputChange} journalEntry={journalEntry} updateJournalState={updateJournalState}/>
             <div className="field">
                 <label className="label">Give Us the Details!</label>
                 <div className="control">

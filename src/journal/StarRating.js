@@ -1,16 +1,16 @@
 import { FaStar } from 'react-icons/fa'
 import "./StarRating.css"
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
-function StarRating(updateJournalState) {
+function StarRating({updateJournalState}) {
 
     const [rating, setRating] = useState([])
     const [hover, setHover] = useState(null)
 
     const handleControlledInputChange = (e) => {
 
-        const newRating = {...rating}
+        const newRating = { ...rating }
 
         newRating[`${e.target.name}`] = e.target.value
 
@@ -33,6 +33,8 @@ function StarRating(updateJournalState) {
     }
 
 
+
+
     return (
         <div className='starRating'>
             {[...Array(5)].map((star, index) => {
@@ -42,8 +44,8 @@ function StarRating(updateJournalState) {
                         <input
                             type="radio"
                             name="rating"
-                            onClick={saveEntry}
                             value={walkRating}
+                            onClick={(clickEvent) => saveEntry(clickEvent)}
                             onChange={handleControlledInputChange}
                         />
                         <FaStar
@@ -52,13 +54,13 @@ function StarRating(updateJournalState) {
                             color={walkRating <= (hover || walkRating) ? "#ffc107" : "#e4e5e9"}
                             onMouseEnter={() => setHover(walkRating)}
                             onMouseLeave={() => setHover(null)
-                            } 
-                            />
+                            }
+                        />
                     </label>
                 )
             })}
 
-            <p> You gave this walk {rating} stars! </p>
+            <p> You gave this walk {rating.rating} stars! </p>
         </div>
 
     )

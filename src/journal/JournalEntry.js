@@ -63,9 +63,9 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
           {singleJournal.entryText}
         </div>
         <div>
-          <div class="tags are-medium has-addons">
-            <span class="tag">You walked with:</span>
-            <span id="dogtag" class="tag">{singleJournal.dog.name}</span>
+          <div className="tags are-medium has-addons">
+            <span className="tag">You walked with:</span>
+            <span id="dogtag" className="tag">{singleJournal.dog.name}</span>
           </div>
         </div>
 
