@@ -1,16 +1,16 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import "./DogsFacts.css"
 
 
 
-export const DogFactWidget = () => {
-const [DogFact, setDogFact] = useState({})
+
+export const DogPicWidget = () => {
+const [DogPic, setDogPic] = useState({})
 
 useEffect(() => {
-fetch(`https://dogapi.dog/api/v2/facts?limit=1`)
+fetch(`https://dog.ceo/api/breeds/image/random`)
 .then(response => response.json())
-.then(dogObject => setDogFact(dogObject.data[0]))
+.then(dogObject => setDogPic(dogObject))
 
 }, [])
 
@@ -18,13 +18,13 @@ fetch(`https://dogapi.dog/api/v2/facts?limit=1`)
     return (
         <>
 <div id="dogfactcard" className="card">
-<p id="weathertext"  className="card-header-title">
-     Did you know? 🐶
+<p id="dogpictext"  className="card-header-title">
+     Check this pup out! 🐶
     </p>
   <div className="card-content">
-    <p id="weathertext" className="subtitle">
-    {DogFact?.attributes?.body}
-    </p>
+    <a id="dogpictext" className="subtitle">
+   <img src={DogPic.message}/>
+    </a>
   </div>
   <footer className="card-footer">
     <p className="card-footer-item">

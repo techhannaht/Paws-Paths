@@ -23,6 +23,7 @@ html {
 }
 
 #pawsdash {
+    
     background-color: rgb(253, 180, 215);
     border-color: rgb(60, 14, 50);
     border-style: solid;
@@ -30,4 +31,12 @@ html {
     border-radius: 7px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+
+#dashtext {
+    text-align: center;
+}
+
+#greetingpic {
+    width: 700px;
 }

@@ -84,7 +84,7 @@ export const JournalEntry = ({ singleJournal, deleteJournalEntry, updateJournalS
       <article id="journalcard" className="message">
 
         <div  id="journalcardheader"  className="message-header">
-          <input name="title" type="text" placeholder="" value={editJournal.title} onChange={handleControlledInputChange} />
+          <input name="route" type="text" placeholder="" value={editJournal.route} onChange={handleControlledInputChange} />
           <p></p>
           <p></p>
           <p></p>

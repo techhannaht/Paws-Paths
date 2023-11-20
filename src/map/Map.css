@@ -1,3 +1,13 @@
 html {
     background-color: rgb(249, 214, 233);
 }
+
+#mapstext {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mapCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
