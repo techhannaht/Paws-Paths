@@ -6,6 +6,7 @@ import { Weather } from "../weather/Weather"
 import { DogFactWidget } from "../dog-facts/DogFacts"
 import logo from "../image/Paws&Paths.png"
 import "./Dashboard.css"
+import { DogPicWidget } from "../dog-pics/DogPics"
 
 
 export const PawsandPathsDash = () => {
@@ -42,8 +43,9 @@ export const PawsandPathsDash = () => {
 
   return (
     <>
-      <div id="pawsdash" className="column is-three-fifths
-is-offset-one-fifth" >
+    
+      <div id="pawsdash" className="column is-half
+is-offset-one-quarter " >
         <div className="container">
           <h1 className="title">
             Hi Human!🐾
@@ -52,7 +54,7 @@ is-offset-one-fifth" >
             How was the walk today with your doggos?
           </p>
           <div className="columns">
-            <div className="column is-three-fifths">
+            <div className="column">
               <JournalForm updateJournalState={updateJournalState} />
             </div>
             <div className="column">
@@ -60,6 +62,9 @@ is-offset-one-fifth" >
             </div>
             <div className="column">
               <DogFactWidget />
+            </div>
+            <div className="column">
+              <DogPicWidget/>
             </div>
 
           </div>
@@ -72,6 +77,7 @@ is-offset-one-fifth" >
           <a id="githubbutton" href="https://github.com/techhannaht"><strong>GitHub</strong></a>
         </span>
       </button>
+      
     </>
 
   )
