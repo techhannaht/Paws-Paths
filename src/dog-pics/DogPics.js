@@ -19,7 +19,7 @@ fetch(`https://dog.ceo/api/breeds/image/random`)
         <>
 <div id="dogfactcard" className="card">
 <p id="dogpictext"  className="card-header-title">
-     Random Dog Pic:
+     Check this pup out! 🐶
     </p>
   <div className="card-content">
     <a id="dogpictext" className="subtitle">

@@ -19,7 +19,7 @@ fetch(`https://dogapi.dog/api/v2/facts?limit=1`)
         <>
 <div id="dogfactcard" className="card">
 <p id="weathertext"  className="card-header-title">
-     Random Dog Fact:
+     Did you know? 🐶
     </p>
   <div className="card-content">
     <p id="weathertext" className="subtitle">

@@ -7,6 +7,8 @@ import { DogFactWidget } from "../dog-facts/DogFacts"
 import logo from "../image/Paws&Paths.png"
 import "./Dashboard.css"
 import { DogPicWidget } from "../dog-pics/DogPics"
+import dashgreeting from "../image/Dash-Greeting.png"
+import logo2 from "../image/PawsandPathsLogo.png"
 
 
 export const PawsandPathsDash = () => {
@@ -43,41 +45,33 @@ export const PawsandPathsDash = () => {
 
   return (
     <>
-    
-      <div id="pawsdash" className="column is-half
-is-offset-one-quarter " >
+
+      <div className="column is-12" >
         <div className="container">
-          <h1 className="title">
-            Hi Human!🐾
+          <h1 id="dashtext" className="title">
+            <img id="greetingpic" src={logo2} />
           </h1>
-          <p className="subtitle">
-            How was the walk today with your doggos?
-          </p>
           <div className="columns">
-            <div className="column">
-              <JournalForm updateJournalState={updateJournalState} />
-            </div>
-            <div className="column">
-              <Weather />
-            </div>
-            <div className="column">
+            <div className="column is-3">
               <DogFactWidget />
             </div>
-            <div className="column">
-              <DogPicWidget/>
+
+            <div id="pawsdash" className="column is-half">
+              <JournalForm updateJournalState={updateJournalState} />
+              <JournalList journalEntries={journalEntries} updateJournalState={updateJournalState} deleteJournalEntry={deleteJournalEntry} />
             </div>
-
+            {/* <div className="column is-3">
+              <Weather />
+            </div> */}
+            {/* <div className="column is-3">
+              <DogFactWidget />
+            </div> */}
+            <div className="column is-3">
+              <DogPicWidget />
+            </div>
           </div>
-          <JournalList journalEntries={journalEntries} updateJournalState={updateJournalState} deleteJournalEntry={deleteJournalEntry} />
-
         </div>
       </div>
-      <button id="githubbutton" className="button" >
-        <span>
-          <a id="githubbutton" href="https://github.com/techhannaht"><strong>GitHub</strong></a>
-        </span>
-      </button>
-      
     </>
 
   )

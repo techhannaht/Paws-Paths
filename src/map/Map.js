@@ -4,9 +4,16 @@ export const MapWidget = () => {
 
     return (
         <>
+            <section id="mapstext" className="section">
+                <h1 class="title"> Froggie and Bean's Favorite Spots</h1>
+                <h2 class="subtitle">
+                    We've provided our favorite places to walk! I hope you enjoy them as much as we do! - Froggie and Bean 🐾
+                </h2>
+            </section>
 
-            <div className="columns">
-                <div className="column">
+            
+            <div  className="columns">
+                <div id="mapCard" className="column">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image">
@@ -17,6 +24,7 @@ export const MapWidget = () => {
                                     referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </figure>
                         </div>
+                       
                         <div class="card-content">
                             <div class="media">
 
@@ -31,9 +39,8 @@ export const MapWidget = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div className="column">
+                <div id="mapCard" className="column">
 
                     <div class="card">
                         <div class="card-image">
@@ -57,7 +64,7 @@ export const MapWidget = () => {
                     </div>
 
                 </div>
-                <div className="column">
+                <div id="mapCard" className="column">
 
                     <div class="card">
                         <div class="card-image">
@@ -86,7 +93,7 @@ export const MapWidget = () => {
 
                 </div>
             </div>
-
+            
 
         </>
 

@@ -13,9 +13,9 @@ export const ApplicationViews = () => {
 				<div>
 					<Routes>
 						<Route path="" element={<PawsandPathsDash />} />
-						<Route path="/dashboard" element={<PawsandPathsDash />} />
+						<Route path="/pathboard" element={<PawsandPathsDash />} />
 						<Route path="/foundersnotes" element={<FoundersNotes />} />
-						<Route path="/morepaths" element={<MapWidget />} />
+						<Route path="/favorites" element={<MapWidget />} />
 					</Routes>
 				</div>
 			</>
