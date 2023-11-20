@@ -17,22 +17,22 @@ fetch(`https://dogapi.dog/api/v2/facts?limit=1`)
 
     return (
         <>
-<div id="dogfactcard" class="card">
-<p id="weathertext"  class="card-header-title">
+<div id="dogfactcard" className="card">
+<p id="weathertext"  className="card-header-title">
      Random Dog Fact:
     </p>
-  <div class="card-content">
-    <p id="weathertext" class="subtitle">
+  <div className="card-content">
+    <p id="weathertext" className="subtitle">
     {DogFact?.attributes?.body}
     </p>
   </div>
-  <footer class="card-footer">
-    <p class="card-footer-item">
+  <footer className="card-footer">
+    <p className="card-footer-item">
       <span>
         Share on <a href="https://twitter.com/i/flow/login">X</a>
       </span>
     </p>
-    <p class="card-footer-item">
+    <p className="card-footer-item">
       <span>
         Share on <a href="https://www.facebook.com/login">Facebook</a>
       </span>

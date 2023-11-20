@@ -1,5 +1,6 @@
 body {
     background-color: rgb(249, 214, 233);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -10,6 +11,7 @@ html {
     background-color: rgb(244, 146, 178);
     border-color: rgb(60, 14, 50);
     color: rgb(60, 14, 50);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #mainlogin {
@@ -18,4 +20,14 @@ html {
 
 #footer {
     background-color: rgb(249, 214, 233);
+}
+
+#pawsdash {
+    background-color: rgb(253, 180, 215);
+    border-color: rgb(60, 14, 50);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }

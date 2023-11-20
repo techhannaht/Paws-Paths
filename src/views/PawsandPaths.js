@@ -42,36 +42,37 @@ export const PawsandPathsDash = () => {
 
   return (
     <>
-    <section className="section">
-      <div className="container">
-        <h1 className="title">
-          Hi Human!🐾
-        </h1>
-        <p className="subtitle">
-          How was the walk today with your doggos?
-        </p>
-        <div className="columns">
-          <div className="column is-three-fifths">
-            <JournalForm updateJournalState={updateJournalState} />
+      <div id="pawsdash" className="column is-three-fifths
+is-offset-one-fifth" >
+        <div className="container">
+          <h1 className="title">
+            Hi Human!🐾
+          </h1>
+          <p className="subtitle">
+            How was the walk today with your doggos?
+          </p>
+          <div className="columns">
+            <div className="column is-three-fifths">
+              <JournalForm updateJournalState={updateJournalState} />
+            </div>
+            <div className="column">
+              <Weather />
+            </div>
+            <div className="column">
+              <DogFactWidget />
+            </div>
+
           </div>
-          <div className="column">
-            <Weather />
-          </div>
-          <div className="column">
-            <DogFactWidget />
-          </div>
+          <JournalList journalEntries={journalEntries} updateJournalState={updateJournalState} deleteJournalEntry={deleteJournalEntry} />
 
         </div>
-        <JournalList journalEntries={journalEntries} updateJournalState={updateJournalState} deleteJournalEntry={deleteJournalEntry} />
-
       </div>
       <button id="githubbutton" className="button" >
         <span>
-        <a id="githubbutton" href="https://github.com/techhannaht"><strong>GitHub</strong></a>
-      </span>
+          <a id="githubbutton" href="https://github.com/techhannaht"><strong>GitHub</strong></a>
+        </span>
       </button>
-    </section>
-</>
+    </>
 
   )
 }
