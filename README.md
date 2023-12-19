@@ -8,12 +8,12 @@ Paws&Paths allows users to log in to their personal dashboard and document their
 https://screenrec.com/share/GOu8ia6doS
 
 ## Installation Instructions
-Clone down the repository
-In gitbash window open code using code .
-Install JSON-Server by running json-server
-In a seperate gitbash window, navigate to the API folder and run json-server -p 8088 -w database.json
-In the root folder start the app by running npm start
-Register an account and log in to Paws&Paths
+* Clone down the repository
+* In gitbash window open code using code .
+* Install JSON-Server by running json-server
+* In a seperate gitbash window, navigate to the API folder and run json-server -p 8088 -w database.json
+* In the root folder start the app by running npm start
+* Register an account and log in to Paws&Paths
 
 # Screen Capture Overview 
 
