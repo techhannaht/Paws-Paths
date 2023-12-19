@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Stock Sleuth
+Overview
+aws&Paths allows users to log in to their personal dashboard and document their dog walking routes for their own personal dog walking journal. The dashboard showcases a feed where users can document the route they walked in the community and their thoughts about it. Users can also include their rating of the walk, what dog they were walking, positive or negative experiences, and/or things to look out for on the route.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Video Walkthrough
+https://screenrec.com/share/GOu8ia6doS
 
-## Available Scripts
+Installation Instructions
+Clone down the repository
+In gitbash window open code using code .
+Install JSON-Server by running json-server
+In a seperate gitbash window, navigate to the API folder and run json-server -p 8088 -w database.json
+In the root folder start the app by running npm start
+Register an account and log in to Paws&Paths
 
-In the project directory, you can run:
+Homepage
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pathboard
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![19 12 2023_15 27 27_REC](https://github.com/techhannaht/Paws-Paths/assets/115485891/f264ba68-3bbf-4376-9a8d-95ac7dd7b3f3)
 
-### `npm test`
+F&B's Favorites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![19 12 2023_15 28 38_REC](https://github.com/techhannaht/Paws-Paths/assets/115485891/2d6c142b-b642-46d2-836f-e3c593c35c2e)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Founders Notes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![19 12 2023_15 29 32_REC](https://github.com/techhannaht/Paws-Paths/assets/115485891/df72cad3-15ee-4f01-9407-be9b693e7da0)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
