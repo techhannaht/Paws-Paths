@@ -1,6 +1,8 @@
-Stock Sleuth
+Paws&Paths
+
 Overview
-aws&Paths allows users to log in to their personal dashboard and document their dog walking routes for their own personal dog walking journal. The dashboard showcases a feed where users can document the route they walked in the community and their thoughts about it. Users can also include their rating of the walk, what dog they were walking, positive or negative experiences, and/or things to look out for on the route.
+
+Paws&Paths allows users to log in to their personal dashboard and document their dog walking routes for their own personal dog walking journal. The dashboard showcases a feed where users can document the route they walked in the community and their thoughts about it. Users can also include their rating of the walk, what dog they were walking, positive or negative experiences, and/or things to look out for on the route.
 
 Video Walkthrough
 https://screenrec.com/share/GOu8ia6doS
