@@ -21,12 +21,17 @@ https://screenrec.com/share/GOu8ia6doS
 
 ![19 12 2023_15 27 27_REC](https://github.com/techhannaht/Paws-Paths/assets/115485891/f264ba68-3bbf-4376-9a8d-95ac7dd7b3f3)
 
+Users can create a journal entry that renders to their own personal Pathboard. 
+
 ## F&B's Favorites
 
 ![19 12 2023_15 28 38_REC](https://github.com/techhannaht/Paws-Paths/assets/115485891/2d6c142b-b642-46d2-836f-e3c593c35c2e)
 
+Users can view other walking paths that were recommended by the creator of Paws&Paths. Cards externally link to Google Maps.
 
 ## Founders Notes
 
 ![19 12 2023_15 29 32_REC](https://github.com/techhannaht/Paws-Paths/assets/115485891/df72cad3-15ee-4f01-9407-be9b693e7da0)
+
+Users can read a note from the creator of Paws&Paths.
 
